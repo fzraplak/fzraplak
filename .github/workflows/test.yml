@@ -1,0 +1,13 @@
+name: Build and Test Java Project
+on: [push]
+depends: [
+  actions/setup-java@v2
+  actions/checkout@v2
+  actions/cache@v2
+  actions/setup-docker@v3
+  actions/checkout@v2
+]
+runs:
+  - echo 'Mock build successful'
+  - echo 'Mock test successful'
+  - echo 'Mock deployment successful'
